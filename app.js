@@ -13,7 +13,7 @@ var requestUrl = 'https://westus.api.cognitive.microsoft.com/text/analytics/v2.0
 var task;
 // Setup Restify Server
 var server = restify.createServer();
-server.listen(process.env.port || process.env.PORT, function () {
+server.listen(process.env.port || process.env.PORT || 3477, function () {
    console.log('%s listening to %s', server.name, server.url);
 });
 
